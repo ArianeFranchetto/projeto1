@@ -16,11 +16,13 @@ const handleClick = () => {
 
 const handle20 = () => {
   setAge(20);
+  setBg("green")
 
 }
 
 const handle90 = () => {
   setAge(90);
+  setBg("yellow")
 }
 
   return (
@@ -32,6 +34,10 @@ const handle90 = () => {
 <button onClick={handle20}> Tenho 20 anos!</button>
 
 <button onClick={handle90}> Tenho 90 anos!</button>
+
+{age > 30 && "eu sou maior de 30 anos"}
+
+{age === 20 && "eu tenho 20 anos"}
 ...
 
 <Footer/>
